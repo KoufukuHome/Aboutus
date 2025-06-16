@@ -1,0 +1,830 @@
+@charset "utf-8";
+
+/* #container{
+    overflow: visible;
+} */
+.secCmntitle{
+    background-image: url(../img/aboutus/imgTitle.jpg);
+}
+@media only screen and (max-width:767px){
+    .secCmntitle{
+        background-image: url(../img/aboutus/imgTitle_sp.jpg);
+    }
+    .secCmntitle::after {
+       display: none;
+    }
+    /* #container{
+        padding-bottom: 100px;
+    } */
+}
+
+/* secDetailsModel */
+.secTop{
+    margin-top: 80px;
+    padding: 120px 0 0px;
+    position: relative;
+}
+.secTop::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 735px;
+    left: 0;
+    top: 0;
+}
+.secTop.lazyloaded::before{
+    background: url(../img/aboutus/bgTop.jpg) center top / cover;
+}
+.secTop .modelWrapper{
+    width: 1735px;
+    margin-left: auto;
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+}
+.secTop .leftTitBox{
+    width: 650px;
+
+    margin: 0 auto 0 0;
+}
+/* boxSlider */
+.secTop .boxSlider{
+    position: relative;
+    width: calc(100% - 650px);
+    padding-left: 35px;
+
+}
+.secTop .swiper{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.secTop .swiper-slide{
+    height: auto;
+}
+
+.secTop .tit{
+    font-size: 52px;
+    line-height: 1.9;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 10px;
+    position: relative;
+}
+.secTop .tit::before{
+    position: absolute;
+    content: "";
+    background: #fdf1ac;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    top: 47px;
+    left: -30px;
+}
+.secTop .border{
+    position: relative;
+    border-bottom: 1px solid #fff;
+}
+.secTop .txtBox{
+    padding: 35px 0 0 25px;
+}
+.secTop .txt{
+    font-size: 20px;
+    font-weight: bold;
+    color: #fdf1ac;
+    position: relative;
+    letter-spacing: 1.5px;
+}
+.secTop .txt::before{
+    position: absolute;
+    content: "";
+    background: #fdf1ac;
+    width: 15px;
+    height: 1px;
+    left: -25px;
+    top: calc(50% - 0.5px);
+}
+.secTop .txt + .txt{
+    margin-top: 24px;
+}
+.secTop .boxTxt{
+    font-size: 16px;
+    line-height: 2;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 24px;
+    letter-spacing: 0.5px;
+}
+.secTop .swiper-pagination{
+    position: absolute;
+    width: 100%;
+    left: calc(50% - 105.5%) !important;
+    bottom: 50px !important;
+}
+.secTop .swiper-pagination-bullet{
+    background: #d3d3d3;
+    margin: 5px !important;
+    opacity: 1;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+}
+.secTop .swiper-pagination-bullet-active{
+    background: #222;
+}
+@media only screen and (max-width:1800px){
+    .secTop .modelWrapper {
+        width: 1565px;
+    }
+    .secTop .leftTitBox {
+        width: 480px;
+    }
+    .secTop .boxSlider {
+        width: calc(100% - 480px);
+    }
+}
+@media only screen and (max-width:1600px){
+    .secTop .modelWrapper {
+        width: 1400px;
+        max-width: calc(100% - 40px);
+    }
+    .secTop .leftTitBox {
+        width: 340px;
+    }
+    .secTop .boxSlider {
+        width: calc(100% - 350px);
+        padding-left: 0;
+    }
+    .secTop .tit {
+        font-size: 45px;
+        letter-spacing: 0px;
+    }
+    .secTop .boxTxt {
+        font-size: 14px;
+        letter-spacing: 0;
+    }
+    .secTop .br16{
+        display: contents;
+    }
+}
+@media only screen and (max-width:1460px){
+    .secTop .boxSlider {
+        width: calc(100% - 300px);
+        padding-left: 0;
+        margin-right: -60px;
+    }
+}
+@media only screen and (max-width:767px){
+    .secTop{
+        margin-top: 40px;
+        padding: 47px 0 0px;
+    }
+    .secTop::before{
+        width: 100%;
+        height:543px;
+    }
+    .secTop.lazyloaded::before{
+        background: url(../img/aboutus/bgTop_sp.jpg) center top / cover;
+    }
+    .secTop .modelWrapper{
+        width: 100%;
+        max-width: none;
+        display: block;
+    }
+    .secTop .leftTitBox{
+        width: 87%;
+        margin: 0 auto;
+    }
+    /* boxSlider */
+    .secTop .boxSlider{
+        width: 100%;
+    }
+    .secTop .swiper{
+        width: 60%;
+        overflow: hidden;
+        position: relative;
+    }
+    .secTop .swiper-slide{
+        height: auto;
+    }
+    
+    .secTop .tit{
+        font-size: 28px;
+        line-height: 1.8;
+
+        letter-spacing: 3px;
+    }
+    .secTop .tit::before{
+        width: 6px;
+        height: 6px;
+        top: 22px;
+        left: -14px;
+    }
+    .secTop .txtBox{
+        padding: 18px 0 0 15px;
+    }
+    .secTop .txt{
+        font-size: 16px;
+        letter-spacing: 0.5px;
+    }
+    .secTop .txt::before{
+        width: 10px;
+        left: -15px;
+        top: calc(50% - 0.5px);
+    }
+    .secTop .txt + .txt{
+        margin-top: 17px;
+    }
+    .secTop .boxTxt{
+        font-size: 13px;
+        line-height: 1.92;
+        margin-top: 16px;
+        letter-spacing: 0.5px;
+    }
+    .secTop .swiper-pagination{
+        position: static;
+        padding-top: 16px;
+    }
+}
+
+
+/* secList */
+.secList{
+    margin-top: 150px;
+}
+.secList .item{
+    display: flex;
+}
+.secList .item:nth-child(n+2){
+    margin-top: 130px;
+}
+.secList .item:nth-child(2n){
+    flex-direction: row-reverse;
+}
+.secList .txtBox{
+    width: calc(100% - 560px);
+    padding: 63px 0 0 112px;
+}
+.secList .item:nth-child(2n) .txtBox{
+    padding: 63px 35px 0 175px;
+}
+.secList .tit{
+    font-size: 52px;
+    line-height: 1.85;
+    font-weight: bold;
+    letter-spacing: 12px;
+    position: relative;
+}
+.secList .tit::before {
+    position: absolute;
+    content: "";
+    background: #fdf1ac;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    top: 47px;
+    left: -30px;
+}
+@media only screen and (max-width:1580px){
+    .secList .tit{
+        font-size: 45px;
+        letter-spacing: 10px;
+    }
+    .secList .tit::before{
+        top: 38px;
+    }
+}
+@media only screen and (max-width:1480px){
+    .secList .tit{
+        font-size: 42px;
+        letter-spacing: 6px;
+    }
+    .secList .tit::before{
+        top: 35px;
+    }
+}
+.secList .border {
+    position: relative;
+    border-bottom: 1px solid #222;
+}
+.secList .txt{
+    font-size: 16px;
+    line-height: 2.25;
+    margin: 28px 0 0 8px;
+    letter-spacing: 1px;
+}
+@media only screen and (max-width:767px){
+    .secList{
+        margin-top: 45px;
+    }
+    .secList .item{
+        display: block;
+    }
+    .secList .item:nth-child(n+2){
+        margin-top: 47px;
+    }
+    
+    .secList .txtBox{
+        width:100%;
+        padding: 20px 0 0 0;
+    }
+    .secList .item:nth-child(2n) .txtBox{
+        padding: 20px 0 0 0px;
+    }
+    .secList .tit{
+        font-size: 20px;
+        line-height: 1.85;
+        letter-spacing: 2px;
+        padding-left: 12px;
+    }
+    .secList .tit::before {
+        position: absolute;
+        content: "";
+        background: #fdf1ac;
+        width: 6px;
+        height: 6px;
+        top: 15px;
+        left: 0;
+    }
+    .secList .leftImg{
+        margin-top: 23px;
+    }
+    .secList .txt{
+        font-size: 12px;
+        line-height: 1.834;
+        margin: 0px;
+        letter-spacing: 0px;
+    }
+}
+@media only screen and (max-width:359px){
+    .secList .tit{
+        font-size: 18px;
+    }
+    .secList .tit::before {
+        top: 14px;
+    }
+}
+
+/* secGallerySlider */
+.secGallerySlider{
+    position: relative;
+    margin-top: 322px;
+}
+.secGallerySlider::before{
+    position: absolute;
+    content: "";
+    background: #222;
+    width: 1px;
+    height: 120px;
+    left:calc(50% - 0.5px);
+    top: -195px;
+}
+.secGallerySlider .boxSlider{
+    position: relative;
+    overflow: hidden;
+    margin-top: 78px;
+}
+.secGallerySlider .swiper-wrapper{
+    transition-timing-function: linear;
+}
+.secGallerySlider .swiper{
+    width: 560px;
+    overflow: visible;
+}
+
+.secGallerySlider .tit {
+    font-size: 52px;
+    line-height: 1.85;
+    font-weight: bold;
+    letter-spacing: 8px;
+    position: relative;
+    text-align: center;
+}
+.secGallerySlider .txt {
+    font-size: 16px;
+    line-height: 2.5;
+    margin-top: 38px;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+.secGallerySlider .border::after {
+    position: absolute;
+    content: "";
+    background: #fdf1ac;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    top: 35px;
+    left: -30px;
+}
+.secGallerySlider .border {
+    position: relative;
+    border-bottom: 1px solid #222;
+}
+.secGallerySlider .lastTxt{
+    font-size: 26px;
+    line-height: 2.15;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 115px;
+    letter-spacing: 1px;
+}
+@media only screen and (max-width:767px){
+    .secGallerySlider .swiper{
+        width: 67.47%;
+    }
+    .secGallerySlider .img{
+        text-align: center;
+    }
+    .secGallerySlider img{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .secGallerySlider{
+        margin-top: 104px;
+    }
+    .secGallerySlider::before{
+        height: 40px;
+        top: -70px;
+    }
+    .secGallerySlider .boxSlider{
+        position: relative;
+        overflow: hidden;
+        margin-top: 25px;
+    }
+    .secGallerySlider .tit {
+        font-size: 20px;
+        line-height: 1.85;
+        letter-spacing: 0px;
+        text-align: left;
+        padding-left: 15px;
+    }
+    .secGallerySlider .txt {
+        font-size: 12px;
+        line-height: 1.834;
+        margin-top: 20px;
+        text-align: left;
+        letter-spacing: 0px;
+    }
+    .secGallerySlider .border::after {
+        width: 6px;
+        height: 6px;
+        top: 12px;
+        left: -15px;
+    }
+    .secGallerySlider .lastTxt{
+        font-size: 14px;
+        line-height: 1.85;
+        margin-top: 50px;
+        letter-spacing: 0;
+    }
+}
+@media only screen and (max-width:359px){
+    .secGallerySlider .tit {
+        font-size: 18px;
+    }
+}
+
+/* secBox */
+.secBox{
+    background: #f7f7f7;
+    margin-top: 115px;
+    padding: 115px 0 125px;
+}
+.secBox .tit{
+    font-size:36px;
+    line-height: 1.67;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 6px;
+}
+.secBox .txt{
+    font-size:22px;
+    margin-top: 33px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.secBox .list{
+    display: flex;
+    margin-top: 53px;
+}
+.secBox .item{
+    width: 48.052%;
+    margin-right: 3.896%;
+    position: relative;
+    background: #fff;
+    padding: 60px 49px 50px;
+}
+.secBox .item:last-child{
+    margin-right: 0;
+}
+.secBox .item::before{
+    position: absolute;
+    content: "";
+    background: #fada39;
+    width: 150px;
+    height: 2px;
+    top: 0;
+    left: 0;
+}
+.secBox .item .img{
+    text-align: center;
+}
+.secBox .itemTxt{
+    font-size: 16px;
+    line-height: 2.25;
+    margin-top: 27px;
+    letter-spacing: 0.5px;
+}
+@media only screen and (max-width:767px){
+    .secBox{
+        margin-top:53px;
+        padding: 54px 0 63px;
+    }
+    .secBox .tit{
+        font-size:18px;
+        line-height: 1.445;
+        letter-spacing: 1px;
+    }
+    .secBox .txt{
+        font-size:14px;
+        margin-top: 15px;
+        letter-spacing: 0px;
+    }
+    .secBox .list{
+        display: block;
+        margin-top: 31px;
+    }
+    .secBox .item{
+        width: 100%;
+        margin-right: 0%;
+        padding: 29px 20px 25px;
+    }
+    .secBox .item:last-child{
+        margin-right: 0;
+        margin-top: 20px;
+    }
+    .secBox .item::before{
+        width: 50px;
+    }
+    .secBox .item .img {
+        text-align: center;
+        padding: 0 10px;
+    }
+    .secBox .itemTxt{
+        font-size: 12px;
+        line-height: 1.834;
+        margin-top: 13px;
+        letter-spacing: 0px;
+    }
+}
+
+/* secHome */
+.secHome{
+    position: relative;
+    min-height: calc(775px + 200px);
+    margin-top: 155px;
+    overflow: hidden;
+    padding-bottom: 200px;
+}
+.secHome .tabBox{
+    display: flex;
+    position: relative;
+}
+.secHome .tab-area{
+    margin-top: 48px;
+    width: 450px;
+}
+.secHome .tab{
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+   color: #222;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    opacity: 0.4;
+    border-bottom: 1px solid #222;
+    padding: 28px 0 32px;
+}
+.secHome .tab:first-child{
+    padding: 24px 0 24px;
+}
+.secHome .tab.active{
+   opacity: 1;
+}
+.secHome .tab.active::before{
+    position: absolute;
+    content: "";
+    background: #ffed82;
+    width: 16px;
+    height: 16px;
+   border-radius: 50%;
+   left: -35px;
+   top: calc(50% - 10px);
+}
+.secHome .content{
+    display: none;
+}
+.secHome .content.active{
+    display: block;
+}
+.secHome .topTit{
+    font-size: 40px;
+    padding-left: 70px;
+    position: relative;
+}
+.secHome .topTit::before{
+    position: absolute;
+    content: "";
+    width: 38px;
+    height: 23px;
+    left: 0;
+    top: calc(50% - 12px);
+}
+.secHome .topTit.lazyloaded::before{
+    background: url(../img/aboutus/iconHome.gif) center top / cover;
+}
+.secHome .box{
+    position: absolute;
+    right: calc(50% - 960px);
+}
+.secHome .boxImg img{
+    border-radius: 150px 0 0 0;
+}
+.secHome .leftBox{
+    margin-top: 10px;
+}
+.secHome .txtBox{
+    margin-top: 48px;
+    position: relative;
+}
+.secHome .txtBox::before{
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 45px;
+    right: calc(50% - 410px);
+    top: 30px;
+}
+.secHome .txtBox.lazyloaded::before{
+    background: url(../img/aboutus/iconHome02.gif) center top / cover;
+}
+.secHome .tit{
+    font-size: 46px;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+.secHome .txt{
+    font-size: 20px;
+    margin-top: 40px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+@media only screen and (max-width:1650px){
+    .secHome .tab-area {
+        width: auto;
+        padding-left: 80px;
+    }
+    .secHome .box {
+        right: calc(50% - 1050px);
+    }
+    .secHome .txtBox::before{
+        right: calc(50% - 220px);
+        top: 30px;
+    }
+}
+@media only screen and (max-width:767px){
+    .secHome {
+        position: relative;
+        min-height: auto;
+        margin-top: 55px;
+        padding-bottom: 100px;
+    }
+    .secHome .tabBox{
+        display: none;
+    }
+    .secHome .topTit{
+        font-size: 22px;
+        padding-left: 40px;
+    }
+    .secHome .topTit::before{
+        width: 26px;
+        height: 16px;
+        left: 0px;
+        top: calc(50% - 6px);
+    }
+
+
+    .secLineup .img img{
+        border-radius: 500px 500px 0 0;
+    }
+    .secLineup .swiper-slide{
+        width: 100%;
+        margin: auto;
+    }
+    .secLineup{
+        overflow: hidden;
+    }
+    .secLineup .boxSlider{
+        margin-left: 5vw;
+        margin-top: 42px;
+    }
+    .secLineup .boxSlider.disabled{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .secLineup .swiper-wrapper{
+        flex-wrap: nowrap;
+    }
+   
+    .secLineup .boxSlider.disabled,
+    .secLineup .swiper{
+        width: 100%;
+    }
+    .secLineup .swiper{
+        margin: 0;
+        overflow: visible;
+    }
+    .secLineup .swiper-horizontal>.swiper-scrollbar{
+        position: static;
+        width: 89.335vw;
+        margin-top: 30px;
+        height: 4px;
+        border-radius: 2px;
+        background: #f7f7f7;
+    }
+    .secLineup .swiper-scrollbar-drag{
+        background: #000;
+    }
+
+    .secHome .txtBox{
+        margin-top: 20px;
+    }
+    .secHome .txtBox::before{
+        display: none;
+    }
+    .secHome .tit{
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+    .secHome .txt{
+        font-size: 13px;
+        line-height: 1.61;
+        margin-top: 11px;
+        letter-spacing: 0px;
+    }
+    .secLineup .inner{
+        display: block;
+        height: 100%;
+    }
+    .secLineup .btn{
+        width: 155px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 11px;
+        font-weight: bold;
+        border-radius: 20px;
+        position: relative;
+        color: #222;
+        border: 1px solid#222;
+        margin: 16px auto 0;
+    }
+    .secLineup .btn::before{
+        position: absolute;
+        content: "";
+        width: 4px;
+        height: 6px;
+        right: 18px;
+        top: calc(50% - 3px);
+    }
+    .secLineup .btn.lazyloaded::before{
+        background: url(../img/aboutus/iconArrow.gif) center top / cover;
+    }
+}
+/* 241118 */
+@media only screen and (min-width:768px){
+    .secHome .content{
+        opacity: 0;
+        animation-name: fadein;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+    }
+    .secHome .content.active{
+        opacity: 1;
+    }
+}
+@keyframes fadein {
+    0% {
+       opacity: 0;
+    }
+    100% {
+       opacity: 1;
+    }
+  }
